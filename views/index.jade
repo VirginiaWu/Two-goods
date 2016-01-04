@@ -1,0 +1,203 @@
+doctype html
+html(lang="en")
+  head
+    title= "Two-goods"
+    meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    link(rel="stylesheet", href= "http://emily123.github.io/smaless/smaless/0.5.0-dropdown.fb02cfa/build/css/main.css")
+    //- link(rel="stylesheet", href= "/css/main.css")
+    //- link(rel="stylesheet", href= "/font-awesome/css/font-awesome.css")
+    //- link(rel="stylesheet", href= "/styles/header.css")
+  body
+    header
+      a.logo(href="#")
+        img(src="https://trello-attachments.s3.amazonaws.com/5677614ccce6b3d59e4bc9d7/60x30/ad7f1ea7713688a05b95a2dcb7e0d4f4/LOGO..png")
+      .nav
+        ul.nav-toolbar.is-align-left.nav-clearfix
+          li
+            a.nav-item#sidebar_controller(href="#")
+              i.fa.fa-bars
+
+        ul.nav-toolbar.is-align-right.nav-clearfix
+          li
+            a.nav-item(href="#")
+              i.fa.fa-database
+          li
+            a.nav-item(href="#")
+              i.fa.fa-tasks
+              span.badge.badge-up.badge-warning
+                | 999+
+          li
+            a.nav-item(href="#")
+              i.icon-vul
+              span.badge.badge-up.badge-info
+                | 999+
+          li
+            a.nav-item(href="#")
+              i.icon-virus
+              span.badge.badge-up.badge-danger
+                | 999+
+            .dropdown
+              | 999
+          li
+            a.nav-item(href="#")#dropdown-ctrl-4
+              i.icon-hips
+              span.badge.badge-up.badge-success
+                | 999+
+            .dropdown-triangle#dropdown-4
+              ul.ul-margin
+                li.sub-header
+                  | Sub header
+                  span
+                    |sub header
+                  i.fa.fa-toggle-on
+                li.li-border-bottom
+                  i.fa.fa-circle.fa-icon
+                  | 1
+                  i.fa.fa-chevron-down.is-align-right
+                li.li-border-bottom
+                  i.fa.fa-circle.fa-icon
+                  | 2
+                li
+                  i.fa.fa-circle.fa-icon
+                  | 3
+          li.user.user-info
+            a.nav-item
+              i.fa.fa-user
+              span super
+          li.user.header-nav
+            a.nav-item(href="#")
+              i.fa.fa-sign-out
+              span.user-exit 退出
+
+
+    sidebar#sidebar
+      .user-panel
+        .user-info
+          p 你好,super
+      ul.menu
+        li
+          a(href="#")
+            i.fa.fa-home
+            span Home
+        li
+          a(data-toggle="collapse", href="#")
+            i.fa.fa-laptop
+            span Terminal
+            i.fa.fa-angle-up.is-align-right
+          ul.menu
+            li.is-active
+              a(href="#")
+                i.fa.fa-circle-thin.fa-1
+                span Monitor
+            li.active
+              a(href="#")
+                i.fa.fa-circle-thin.fa-1
+                span Update
+        li
+          a(href="#")
+            i.fa.fa-database
+            span Service log
+      ul.menu
+        li
+          a(href="#")
+            i.fa.fa-tasks
+            span Current task
+            small
+        li
+          a(href="#")
+            i.fa.fa-outdent
+            span Historical task
+      ul.menu
+        li
+          a(href="#")
+            i.fa.fa-download
+            span Download
+    content#content
+      .content-title
+        h3 Home
+      .content-body
+        .panel.panel-header
+          h3 EXAMPLE:
+        .panel.panel-body
+          .table-responsive
+            table.table.table-sort.table-detail-default.table-stripped-2
+              thead
+                tr
+                  th
+                    | Name
+                    i.fa.fa-sort
+                  th
+                    | Position
+                    i.fa.fa-sort
+                  th
+                    | Office
+                    i.fa.fa-sort
+                  th
+                    | Age
+                    i.fa.fa-sort
+                  th
+                    | Date
+                    i.fa.fa-sort
+              tbody
+                tr
+                  td
+                    .td-icon
+                      i.fa.fa-desktop
+                      span Mark
+                  td 69842 Peyton Viaduct
+                  td
+                    .td-icon
+                      i.fa.fa-client-group
+                      span FE
+                  td 21
+                  td 2013/05/13
+                tr
+                  td
+                    .td-icon
+                      i.fa.fa-desktop
+                      span Mark
+                  td 75151 Kshierin Square
+                  td
+                    .td-icon
+                      i.fa.fa-client-group
+                      span BE
+                  td 25
+                  td 2013/03/18
+                tr
+                  td.is-nopadding(colspan="5")
+                    .detail-default
+                      .detail-title details title
+                      dl
+                        dt  Job Title:
+                        dd  Traffic Cout Referee
+                        dt  Age:
+                        dd  22 Jun 2014
+                        dt Status:
+                        dd Active
+            .statistics
+              span 总共11条数据
+              ul.pagination
+                li.is-disabled
+                  a(href="#") «
+                li.is-active
+                  a(href="#") 1
+                li
+                  a(href="#") 2
+                li
+                  a(href="#") 3
+                li
+                  a(href="#") »
+      .footer
+        span.copyright
+          span Copyright © 2015 Your Company name
+          sapn.line |
+          span Version: 1.0 alpha
+        span.help
+          span
+            a(href="#") Link
+          span.line |
+          span
+            A(href="#") Link
+    script(type="text/javascript", src="/jquery/dist/jquery.min.js")
+    script(src="/js/coffee/toggle.js")
