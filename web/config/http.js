@@ -24,7 +24,6 @@ module.exports.http = {
   ****************************************************************************/
   customMiddleware: function(app){
     app.use(express.static(path.normalize(__dirname + '/../bower_components/')));
-    app.use(express.static(path.normalize(__dirname + '/../smaless/build/')));
   },
 
    middleware: {

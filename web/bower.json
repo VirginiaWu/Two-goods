@@ -1,0 +1,22 @@
+{
+  "name": "Two-goods",
+  "description": "For two goods",
+  "main": "app.js",
+  "authors": [
+    "wuxinxin"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/VirginiaWu/Two-goods",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "smaless": "latest",
+    "jquery": "~2.1.4"
+  }
+}

@@ -1,13 +1,16 @@
 web:
-  build: ./web
+  build: ./web/
   working_dir: /server
   ports:
     - "1337:1337"
   links:
     - elasticsearch
+  environment:
+    - ES_IP=elasticsearch
+    - ES_PORT=9200
 
 
 elasticsearch:
-  build: ./elasticsearch
+  build: ./elasticsearch/
   ports:
     - "9200:9200"
