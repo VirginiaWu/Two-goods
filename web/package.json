@@ -37,5 +37,9 @@
     "url": "git://github.com/wuxinxin/Two-goods.git"
   },
   "author": "wuxinxin",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
 }
