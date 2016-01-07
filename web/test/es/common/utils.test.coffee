@@ -1,3 +1,4 @@
+path = require 'path'
 utils = require '../../../es/common/utils'
 chai = require 'chai'
 expect = chai.expect
@@ -13,3 +14,11 @@ describe 'promiseWhile', ->
       i++ 
     .then ->
       expect(i).to.equal(3)
+
+
+describe 'getYamlVersion', ->
+  getYamlVersion = utils.getYamlVersion
+  it 'should parse version.test.yml', ->
+    getYamlVersion(path.resolve "#{__dirname}/../../../test/es/data/version.test.yml")
+    .then (version) ->
+      expect(version).to.deep.equal({version: 0})
