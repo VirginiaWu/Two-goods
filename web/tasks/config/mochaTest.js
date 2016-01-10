@@ -8,7 +8,19 @@ module.exports = function (grunt) {
         require: 'coffee-script/register'
       },
       src: [
-        'test/es/**/*.coffee'
+        'test/es/**/*.test.coffee'
+      ]
+    },
+    route: {
+      options: {
+        reporter: 'spec',
+        require: [
+          'coffee-script/register'
+        ]
+      },
+      src: [
+        'test/bootstrap.test.js',
+        'test/routes/**/*.test.coffee'
       ]
     }
   });
