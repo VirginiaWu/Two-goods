@@ -17,13 +17,7 @@ promiseWhile = (condition, action) ->
     return
 
 getYamlVersion = (_path) ->
-  Promise.resolve(
-    yaml.safeLoad fs.readFileSync(_path, 'utf-8')
-  ).then (version) ->
-    version
-  .catch (err) ->
-    console.log 'getYamlVersion error', err
-    version:0
+  yaml.safeLoad fs.readFileSync(_path, 'utf-8')
 
 
 

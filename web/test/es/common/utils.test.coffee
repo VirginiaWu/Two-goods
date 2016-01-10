@@ -19,6 +19,5 @@ describe 'promiseWhile', ->
 describe 'getYamlVersion', ->
   getYamlVersion = utils.getYamlVersion
   it 'should parse version.test.yml', ->
-    getYamlVersion(path.resolve "#{__dirname}/../../../test/es/data/version.test.yml")
-    .then (version) ->
-      expect(version).to.deep.equal({version: 0})
+    version = getYamlVersion(path.resolve "#{__dirname}/../../../test/es/data/version.test.yml")
+    expect(version).to.deep.equal({version: 0})

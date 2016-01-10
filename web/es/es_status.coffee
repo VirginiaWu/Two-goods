@@ -4,9 +4,9 @@ promiseWhile = utils.promiseWhile
 
 es_client = (require './es_client').es_client
 
-ready = false
 pingEs = ->
   console.log 'Ping...'
+  ready = false
   promiseWhile ->
     return not ready
   , ->
@@ -20,6 +20,17 @@ pingEs = ->
       ready = false 
     .delay 500
 
+getDBVersion = ->
+  es_client.getSource
+    index: 'version'
+    type: 'ver'
+    id: 'v'
+  .then (version) ->
+    version
+  .catch (err) ->
+    console.log 'Get database version err'
+    version: 0
 
 module.exports =
   pingEs: pingEs
+  getDBVersion: getDBVersion
