@@ -14,8 +14,24 @@
   $ pip install docker-compose
 ```
 
-### How to run?
+### How to start up?
 ```
   $ docker-compose -p xxw up
 ```
 
+### How to run es test?
+```
+  $ cd web/
+  $ grunt test:back
+```
+
+### How to run url test?
+Two ways:
+```
+  $ ./routes.test.sh
+```
+or
+```
+  $ cd web/
+  $ grunt test:route
+```

@@ -1,0 +1,20 @@
+
+web:
+  build: ./docker.test/web/
+  working_dir: /server
+  links:
+    - elasticsearch
+  environment:
+    - ES_IP=elasticsearch
+    - ES_PORT=9200
+  volumes:
+    - ./web:/server/web
+
+
+elasticsearch:
+  build: ./docker.test/elasticsearch/
+  ports:
+    - "9200"
+  environment:
+    - CLUSTER_NAME=test
+    - NODE_NAME=test
