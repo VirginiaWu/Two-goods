@@ -1,0 +1,35 @@
+/// This is nav module, it is a right component of header.
+/// @group header
+/// @since 0.4.0
+.nav{
+  margin-bottom: 0;
+  padding-left: 0; // Override default ul/ol
+  list-style: none;
+  height: $layout-header-height;
+  @include clearfix;
+  .nav-item {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    display: block;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    padding: ($layout-header-height - 20px)/2;
+    &:hover, &:focus, &:active {
+      background-color: $header-hover-bgcolor;
+      color: $color-white;
+    }
+  }
+  .fa-bars {
+    line-height: 20px;
+    font-size: 20px;
+  }
+}
+/// This is a nav-toolbar module, and it is a child of nav.
+/// @group header
+/// @since 0.4.0
+.nav-toolbar{
+  > li{
+    float: left;
+  }
+}
