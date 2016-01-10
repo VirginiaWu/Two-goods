@@ -1,3 +1,5 @@
+path = require 'path'
+
 es_client = (require '../../es/es_client').es_client
 es_status = require '../../es/es_status'
 Promise = require 'bluebird'
@@ -16,3 +18,9 @@ describe 'getDBVersion', ->
       )
     .then ->
       es_client.getSource.restore()
+
+describe 'getUpdateCmd', ->
+  it 'should return coffee', ->
+    updateCmd = es_status.getUpdateCmd()
+    targetPath = path.resolve "#{__dirname}/../../es/update/update.coffee"
+    expect(updateCmd).to.equal("coffee #{targetPath}")
