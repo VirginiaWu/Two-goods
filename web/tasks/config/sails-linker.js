@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 			options: {
 				startTag: '<!--SCRIPTS-->',
 				endTag: '<!--SCRIPTS END-->',
-				fileTmpl: '<script src="%s"></script>',
+				fileTmpl: '<script scss="%s"></script>',
 				appRoot: '.tmp/public'
 			},
 			files: {
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 			options: {
 				startTag: '<!--SCRIPTS-->',
 				endTag: '<!--SCRIPTS END-->',
-				fileTmpl: '<script src="%s"></script>',
+				fileTmpl: '<script scss="%s"></script>',
 				appRoot: '.tmp/public',
 				relative: true
 			},
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 			options: {
 				startTag: '<!--SCRIPTS-->',
 				endTag: '<!--SCRIPTS END-->',
-				fileTmpl: '<script src="%s"></script>',
+				fileTmpl: '<script scss="%s"></script>',
 				appRoot: '.tmp/public'
 			},
 			files: {
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 			options: {
 				startTag: '<!--SCRIPTS-->',
 				endTag: '<!--SCRIPTS END-->',
-				fileTmpl: '<script src="%s"></script>',
+				fileTmpl: '<script scss="%s"></script>',
 				appRoot: '.tmp/public',
 				relative: true
 			},
@@ -137,7 +137,7 @@ module.exports = function(grunt) {
 			options: {
 				startTag: '<!--TEMPLATES-->',
 				endTag: '<!--TEMPLATES END-->',
-				fileTmpl: '<script type="text/javascript" src="%s"></script>',
+				fileTmpl: '<script type="text/javascript" scss="%s"></script>',
 				appRoot: '.tmp/public'
 			},
 			files: {
@@ -151,7 +151,7 @@ module.exports = function(grunt) {
 			options: {
 				startTag: '// SCRIPTS',
 				endTag: '// SCRIPTS END',
-				fileTmpl: 'script(src="%s")',
+				fileTmpl: 'script(scss="%s")',
 				appRoot: '.tmp/public'
 			},
 			files: {
@@ -163,7 +163,7 @@ module.exports = function(grunt) {
 			options: {
 				startTag: '// SCRIPTS',
 				endTag: '// SCRIPTS END',
-				fileTmpl: 'script(src="%s")',
+				fileTmpl: 'script(scss="%s")',
 				appRoot: '.tmp/public',
 				relative: true
 			},
@@ -176,7 +176,7 @@ module.exports = function(grunt) {
 			options: {
 				startTag: '// SCRIPTS',
 				endTag: '// SCRIPTS END',
-				fileTmpl: 'script(src="%s")',
+				fileTmpl: 'script(scss="%s")',
 				appRoot: '.tmp/public'
 			},
 			files: {
@@ -188,7 +188,7 @@ module.exports = function(grunt) {
 			options: {
 				startTag: '// SCRIPTS',
 				endTag: '// SCRIPTS END',
-				fileTmpl: 'script(src="%s")',
+				fileTmpl: 'script(scss="%s")',
 				appRoot: '.tmp/public',
 				relative: true
 			},
@@ -254,7 +254,7 @@ module.exports = function(grunt) {
 			options: {
 				startTag: '// TEMPLATES',
 				endTag: '// TEMPLATES END',
-				fileTmpl: 'script(type="text/javascript", src="%s")',
+				fileTmpl: 'script(type="text/javascript", scss="%s")',
 				appRoot: '.tmp/public'
 			},
 			files: {
