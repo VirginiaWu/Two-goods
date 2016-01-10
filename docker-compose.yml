@@ -9,7 +9,7 @@ web:
     - ES_IP=elasticsearch
     - ES_PORT=9200
   volumes:
-    - ./web:/server
+    - ./web:/server/web
 
 
 elasticsearch:

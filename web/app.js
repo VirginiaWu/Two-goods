@@ -2,7 +2,6 @@ process.chdir(__dirname);
 
 require('coffee-script').register();
 
-var pingEs = require('./es/es_status').pingEs
 // Ensure a "sails" can be located:
 var lift = function() {
   var sails;
@@ -38,6 +37,12 @@ var lift = function() {
   // Start server
   sails.lift(rc('sails')); 
 };
+
+var es_status = require('./es/es_status');
+var pingEs = es_status.pingEs,
+  updateDBVersion = es_status.updateDBVersion;
+
 pingEs().then(function () {
-  lift();
+  //lift();
+  updateDBVersion(lift);
 });
