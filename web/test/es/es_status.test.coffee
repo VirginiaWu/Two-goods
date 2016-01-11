@@ -23,4 +23,4 @@ describe 'getUpdateCmd', ->
   it 'should return coffee', ->
     updateCmd = es_status.getUpdateCmd()
     targetPath = path.resolve "#{__dirname}/../../es/update/update.coffee"
-    expect(updateCmd).to.equal("coffee #{targetPath}")
+    expect(updateCmd).to.equal("./node_modules/.bin/coffee #{targetPath}")
