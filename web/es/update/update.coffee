@@ -11,7 +11,7 @@ es_status = (require '../es_status')
 
 class Update
   constructor: (verSrc) ->
-    @version = verSrc.version
+    @version = verSrc.doc.version
 
   doUpdate: ->
     @updateVersion = "versions/#{@version}"
@@ -20,17 +20,17 @@ class Update
     Promise.resolve(
       @update(@version)
     ).then (newVersion) ->
-      es_client.index
+      es_client.update
         index: 'version'
         type: 'ver'
         id: 'v'
         body: newVersion
       .then ->
-        newVersion
+        newVersion.doc
 
 yamlVersion = getYamlVersion(path.resolve "#{__dirname}/version.yml")
 doUpdate = (dbVersion) ->
-  if dbVersion.version >= yamlVersion.version
+  if dbVersion.doc.version >= yamlVersion.version
     return process.exit 0
   update = new Update(dbVersion)
   update.doUpdate().then doUpdate

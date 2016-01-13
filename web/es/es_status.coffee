@@ -28,11 +28,20 @@ getDBVersion = ->
     index: 'version'
     type: 'ver'
     id: 'v'
-  .then (version) ->
-    version
+  .then (ver) ->
+    doc:
+      version: ver.version
   .catch (err) ->
-    console.log 'Get database version err'
-    version: 0
+    es_client.index
+      index: 'version'
+      type: 'ver'
+      id: 'v'
+      timestamp: new Date()
+      body:
+        version: 0
+    .then ->
+      doc:
+        version: 0
 
 #TODO: set the `coffee` env
 getUpdateCmd = ->

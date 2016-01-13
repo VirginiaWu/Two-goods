@@ -14,7 +14,8 @@ describe 'getDBVersion', ->
     getDBVersion()
     .then (version) ->
       expect(version).to.deep.equal(
-        version: 0
+        doc:
+          version: 0
       )
     .then ->
       es_client.getSource.restore()

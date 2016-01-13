@@ -3,6 +3,8 @@ Promise = require 'bluebird'
 module.exports = ->
   Promise.resolve(
   ).then ->
-    version: 1
+    doc:
+      version: 1
   .catch ->
-    versio: 0
+    doc:
+      versio: 0
