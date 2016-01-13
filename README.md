@@ -10,8 +10,8 @@
 ```
 ### How to install docker-compose?
 ```
-  $ apt-get install python-pip
-  $ pip install docker-compose
+  $ sudo apt-get install python-pip
+  $ sudo pip install docker-compose
 ```
 
 ### How to start up?
