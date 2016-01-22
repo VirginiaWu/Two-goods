@@ -16,7 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "smaless": "latest",
     "jquery": "~2.1.4"
   }
 }
