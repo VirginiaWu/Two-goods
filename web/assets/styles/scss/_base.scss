@@ -2,6 +2,14 @@
 * {
   box-sizing: content-box;
 }
+html {
+  height: 100%;
+  font-family: sans-serif; // 1
+  -ms-text-size-adjust: 100%; // 2
+  -webkit-text-size-adjust: 100%; // 2
+}
+
+
 table {
   background-color: $table-bg;
   border-spacing: $table-spacing;
@@ -67,9 +75,19 @@ ul,ol {
   list-style: none;
 }
 body {
-  color: #333;
   font-size: $font-size-base;
-  font-family: 'Helvetica','Source Sans Pro',"华文细黑", "微软雅黑", "宋体", "黑体";
+  height: 100%;
+  margin: 16px;
+  padding: 0;
+  color: $gray-darker;
+  font-family: $font-family-sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
   min-width: 456px;
 }
 h1, h2, h3, h4, h5, h6,
@@ -131,8 +149,11 @@ p {
   margin: 0 0 ($line-height-computed / 2);
 }
 a {
+  text-decoration: none;
   outline: none;
 }
+
 button {
   font-size: 100%;
+  outline: none;
 }
