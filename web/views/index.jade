@@ -12,11 +12,11 @@ html(lang="en")
       .nav
         ul.nav-toolbar.is-align-left.nav-clearfix
           li
-            a.nav-item(href="#") 首页
+            a.nav-item#home(href="#") 首页
           li
-            a.nav-item(href="#") 发布闲置
+            a.nav-item#release(href="#") 发布闲置
           li
-            a.nav-item(href="#") 我的闲置
+            a.nav-item#personal(href="/personal") 我的闲置
 
         ul.nav-toolbar.is-align-right.nav-clearfix
           li
@@ -24,3 +24,62 @@ html(lang="en")
               input.search-input(type="text", placeholder="search")
               button.search-btn(type="submit")
                 i.fa.fa-search
+    content
+      .row
+        .col-md-3
+          ul.category
+            li.list-item
+              span.fa.fa-camera-retro
+              a(href="#")
+              | 闲置数码
+              span.min-list-item
+                a(href="#") 相机
+                a(href="#") 手机
+                a(href="#") 笔记本
+            li.list-item
+              span.fa.fa-street-view
+              a(href="#")
+              | 闲置母婴
+              span.min-list-item
+                a(href="#") 童装
+                a(href="#") 宝宝用品
+                a(href="#") 玩具
+            li.list-item
+              span.fa.fa-bed
+              a(href="#")
+              | 家居日用
+              span.min-list-item
+                a(href="#") 家具
+                a(href="#") 家纺
+                a(href="#") 日用
+            li.list-item
+              span.fa.fa-music
+              a(href="#")
+              | 影音家电
+              span.min-list-item
+                a(href="#") 大家电
+                a(href="#") 小家电
+                a(href="#") 料理机
+            li.list-item
+              span.fa.fa-i-cursor
+              a(href="#")
+              | 鞋服配饰
+              span.min-list-item
+                a(href="#") 女装
+                a(href="#") 女鞋
+                a(href="#") 箱包
+                a(href="#") 配饰
+            li.list-item
+              span.fa.fa-diamond
+              a(href="#")
+              | 珠宝收藏
+              span.min-list-item
+                a(href="#") 珠宝
+                a(href="#") 饰品
+                a(href="#") 艺术收藏
+        .col-md-4
+          span jcjshk
+        .col-md-4
+          span sjcjhcj
+    script(type="text/javascript", src="jquery/dist/jquery.min.js")
+    script(src="js/coffee/header.js")
