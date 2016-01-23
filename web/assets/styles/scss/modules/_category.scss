@@ -1,0 +1,29 @@
+.category {
+  border: 1px solid $border-color-default;
+  li {
+    padding: 16px 0;
+    margin: 0 10px;
+    border-bottom: 1px solid $border-color-default;
+  }
+  li:last-child {
+    border-bottom: none;
+  }
+  .fa {
+    width: 20px;
+    margin: 0 8px;
+  }
+  .min-list-item {
+    margin-left: 8px;
+    a {
+      margin: 0 4px;
+      font-size: 12px;
+      font: 12px/1.5 arial;
+      white-space: nowrap;
+      color: $min-item-color;
+      &:hover {
+        color: $min-item-hover;
+        border-bottom: 1px solid $min-item-hover;
+      }
+    }
+  }
+}
