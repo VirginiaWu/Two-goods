@@ -32,8 +32,6 @@
 // .#{$fa-css-prefix}-flip-vertical   { @include fa-icon-flip(1, -1, 2); }
 
 // .#{$fa-css-prefix}-glass:before { content: $fa-var-glass; }
-// .#{$fa-css-prefix}-music:before { content: $fa-var-music; }
- .#{$fa-css-prefix}-search:before { content: $fa-var-search; }
 // .#{$fa-css-prefix}-envelope-o:before { content: $fa-var-envelope-o; }
 // .#{$fa-css-prefix}-heart:before { content: $fa-var-heart; }
 // .#{$fa-css-prefix}-star:before { content: $fa-var-star; }
@@ -157,7 +155,7 @@
 // .#{$fa-css-prefix}-bar-chart:before { content: $fa-var-bar-chart; }
 // .#{$fa-css-prefix}-twitter-square:before { content: $fa-var-twitter-square; }
 // .#{$fa-css-prefix}-facebook-square:before { content: $fa-var-facebook-square; }
-// .#{$fa-css-prefix}-camera-retro:before { content: $fa-var-camera-retro; }
+ .#{$fa-css-prefix}-camera-retro:before { content: $fa-var-camera-retro; }
 // .#{$fa-css-prefix}-key:before { content: $fa-var-key; }
 // .#{$fa-css-prefix}-gears:before,
 // .#{$fa-css-prefix}-cogs:before { content: $fa-var-cogs; }
@@ -573,11 +571,9 @@
 // .#{$fa-css-prefix}-skyatlas:before { content: $fa-var-skyatlas; }
 // .#{$fa-css-prefix}-cart-plus:before { content: $fa-var-cart-plus; }
 // .#{$fa-css-prefix}-cart-arrow-down:before { content: $fa-var-cart-arrow-down; }
-// .#{$fa-css-prefix}-diamond:before { content: $fa-var-diamond; }
 // .#{$fa-css-prefix}-ship:before { content: $fa-var-ship; }
 // .#{$fa-css-prefix}-user-secret:before { content: $fa-var-user-secret; }
 // .#{$fa-css-prefix}-motorcycle:before { content: $fa-var-motorcycle; }
-// .#{$fa-css-prefix}-street-view:before { content: $fa-var-street-view; }
 // .#{$fa-css-prefix}-heartbeat:before { content: $fa-var-heartbeat; }
 // .#{$fa-css-prefix}-venus:before { content: $fa-var-venus; }
 // .#{$fa-css-prefix}-mars:before { content: $fa-var-mars; }
@@ -600,7 +596,6 @@
 // .#{$fa-css-prefix}-user-plus:before { content: $fa-var-user-plus; }
 // .#{$fa-css-prefix}-user-times:before { content: $fa-var-user-times; }
 // .#{$fa-css-prefix}-hotel:before,
-// .#{$fa-css-prefix}-bed:before { content: $fa-var-bed; }
 // .#{$fa-css-prefix}-viacoin:before { content: $fa-var-viacoin; }
 // .#{$fa-css-prefix}-train:before { content: $fa-var-train; }
 // .#{$fa-css-prefix}-subway:before { content: $fa-var-subway; }
@@ -621,7 +616,6 @@
 // .#{$fa-css-prefix}-battery-0:before,
 // .#{$fa-css-prefix}-battery-empty:before { content: $fa-var-battery-empty; }
 // .#{$fa-css-prefix}-mouse-pointer:before { content: $fa-var-mouse-pointer; }
-// .#{$fa-css-prefix}-i-cursor:before { content: $fa-var-i-cursor; }
 // .#{$fa-css-prefix}-object-group:before { content: $fa-var-object-group; }
 // .#{$fa-css-prefix}-object-ungroup:before { content: $fa-var-object-ungroup; }
 // .#{$fa-css-prefix}-sticky-note:before { content: $fa-var-sticky-note; }
@@ -682,6 +676,30 @@
 // .#{$fa-css-prefix}-vimeo:before { content: $fa-var-vimeo; }
 // .#{$fa-css-prefix}-black-tie:before { content: $fa-var-black-tie; }
 // .#{$fa-css-prefix}-fonticons:before { content: $fa-var-fonticons; }
+//.#{$fa-css-prefix}-desktop:before { content: $fa-var-desktop; }
+//.#{$fa-css-prefix}-home:before { content: $fa-var-home; }
+//.#{$fa-css-prefix}-laptop:before { content: $fa-var-laptop; }
+//.#{$fa-css-prefix}-archive:before { content: $fa-var-archive; }
+//.#{$fa-css-prefix}-bar-chart-o:before,
+//.#{$fa-css-prefix}-lock:before { content: $fa-var-lock; }
+//.#{$fa-css-prefix}-database:before { content: $fa-var-database; }
+//.#{$fa-css-prefix}-tasks:before { content: $fa-var-tasks; }
+//.#{$fa-css-prefix}-outdent:before { content: $fa-var-outdent; }
+//.#{$fa-css-prefix}-user:before { content: $fa-var-user; }
+//.#{$fa-css-prefix}-users:before { content: $fa-var-users; }
+//.#{$fa-css-prefix}-clock-o:before { content: $fa-var-clock-o; }
+//.#{$fa-css-prefix}-cog:before { content: $fa-var-cog; }
+//.#{$fa-css-prefix}-download:before { content: $fa-var-download; }
+//.#{$fa-css-prefix}-circle-thin:before { content: $fa-var-circle-thin; }
+//.#{$fa-css-prefix}-angle-down:before { content: $fa-var-angle-down; }
+//.#{$fa-css-prefix}-angle-up:before { content: $fa-var-angle-up; }
+//.#{$fa-css-prefix}-unsorted:after,
+//.#{$fa-css-prefix}-sort:after { content: $fa-var-sort; }
+//.#{$fa-css-prefix}-sort-down:after,
+//.#{$fa-css-prefix}-sort-desc:after { content: $fa-var-sort-desc; }
+//.#{$fa-css-prefix}-sort-up:after,
+//.#{$fa-css-prefix}-sort-asc:after { content: $fa-var-sort-asc; }
+
 .icon-virus:before {
 	content: "\e900";
 }
@@ -729,35 +747,16 @@
   -moz-osx-font-smoothing: grayscale;
 
 }
-
-// sort after table th
-.#{$fa-css-prefix}-unsorted:after,
-.#{$fa-css-prefix}-sort:after { content: $fa-var-sort; }
-.#{$fa-css-prefix}-sort-down:after,
-.#{$fa-css-prefix}-sort-desc:after { content: $fa-var-sort-desc; }
-.#{$fa-css-prefix}-sort-up:after,
-.#{$fa-css-prefix}-sort-asc:after { content: $fa-var-sort-asc; }
 // client group icon
-.#{$fa-css-prefix}-client-group {
-  background: url("../images/clientGroup.png");
-  background-size: 12px 12px;
-  width: 12px;
-  height: 12px;
-}
-.#{$fa-css-prefix}-desktop:before { content: $fa-var-desktop; }
-.#{$fa-css-prefix}-home:before { content: $fa-var-home; }
-.#{$fa-css-prefix}-laptop:before { content: $fa-var-laptop; }
-.#{$fa-css-prefix}-archive:before { content: $fa-var-archive; }
-.#{$fa-css-prefix}-bar-chart-o:before,
-.#{$fa-css-prefix}-lock:before { content: $fa-var-lock; }
-.#{$fa-css-prefix}-database:before { content: $fa-var-database; }
-.#{$fa-css-prefix}-tasks:before { content: $fa-var-tasks; }
-.#{$fa-css-prefix}-outdent:before { content: $fa-var-outdent; }
-.#{$fa-css-prefix}-user:before { content: $fa-var-user; }
-.#{$fa-css-prefix}-users:before { content: $fa-var-users; }
-.#{$fa-css-prefix}-clock-o:before { content: $fa-var-clock-o; }
-.#{$fa-css-prefix}-cog:before { content: $fa-var-cog; }
-.#{$fa-css-prefix}-download:before { content: $fa-var-download; }
-.#{$fa-css-prefix}-circle-thin:before { content: $fa-var-circle-thin; }
-.#{$fa-css-prefix}-angle-down:before { content: $fa-var-angle-down; }
-.#{$fa-css-prefix}-angle-up:before { content: $fa-var-angle-up; }
+//.#{$fa-css-prefix}-client-group {
+//  background: url("../images/clientGroup.png");
+//  background-size: 12px 12px;
+//  width: 12px;
+//  height: 12px;
+//}
+.#{$fa-css-prefix}-diamond:before { content: $fa-var-diamond; }
+.#{$fa-css-prefix}-i-cursor:before { content: $fa-var-i-cursor; }
+.#{$fa-css-prefix}-bed:before { content: $fa-var-bed; }
+.#{$fa-css-prefix}-street-view:before { content: $fa-var-street-view; }
+.#{$fa-css-prefix}-music:before { content: $fa-var-music; }
+.#{$fa-css-prefix}-search:before { content: $fa-var-search; }
