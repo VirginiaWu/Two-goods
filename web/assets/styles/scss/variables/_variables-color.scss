@@ -658,7 +658,7 @@ $sidebar-hover-bgcolor:            #dde3eb;
 $sidebar-active-color:             $brand-primary;
 
 /// content
-$content-bg-color:                 #eef3fa;
+$content-bg-color:                 #fff;
 /// nav-color
 /// @group header
 /// @since 0.4.0
@@ -685,3 +685,7 @@ $icon-sliders-color:               $color-success-lighter;
 
 /// switchButton
 $switchButton-off:                 #ccc;
+
+/// category
+$min-item-color:                   $gray-light;
+$min-item-hover:                   $brand-primary;
