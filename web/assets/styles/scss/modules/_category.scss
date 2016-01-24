@@ -1,29 +1,122 @@
 .category {
+  background-color: #fff;
   border: 1px solid $border-color-default;
   li {
-    padding: 16px 0;
-    margin: 0 10px;
+    position: relative;
+    display: list-item;
+    padding: 0 10px;
     border-bottom: 1px solid $border-color-default;
+    &:hover {
+      background-color: #f3f3f3;
+    }
   }
   li:last-child {
     border-bottom: none;
   }
-  .fa {
-    width: 20px;
-    margin: 0 8px;
-  }
-  .min-list-item {
-    margin-left: 8px;
-    a {
-      margin: 0 4px;
-      font-size: 12px;
-      font: 12px/1.5 arial;
-      white-space: nowrap;
-      color: $min-item-color;
+  .main-area {
+    padding: $padding-default*2 0;
+    > a {
+      color: #333;
       &:hover {
-        color: $min-item-hover;
-        border-bottom: 1px solid $min-item-hover;
+        border-bottom: 1px solid #333;
       }
     }
+    .fa {
+      width: 20px;
+      margin: 0 $margin-default;
+    }
+    .min-list-item {
+      display: inline-block;
+      margin-left: $margin-default;
+      a {
+        margin: 0 $margin-default/2;
+        font-size: 12px;
+        font: 12px/1.5 arial;
+        white-space: nowrap;
+        color: $min-item-color;
+        &:hover {
+          color: $min-item-hover;
+          border-bottom: 1px solid $min-item-hover;
+        }
+      }
+    }
+  }
+}
+.extra-area {
+  display: none;
+  padding: $padding-default $padding-default 0 $padding-default;
+  border: 1px solid $border-color-default;
+  position: absolute;
+  left: 267px;
+  top: -1px;
+  width: 500px;
+  background-color: #fff;
+  z-index: 999;
+  .sub-category {
+    padding: $padding-default 0 0 0;
+    display: inline-block;
+    dl {
+      padding: 0 $padding-default;
+      width: 240px;
+      float: left;
+      @include clearfix();
+      dt {
+        padding-left: $padding-default;
+        border-left: 3px solid #ffda44;
+        > a {
+          color: #333;
+          &:hover {
+            border-bottom: 1px solid #333;
+          }
+        }
+      }
+      dd {
+        padding: 16px 0;
+        > a {
+          color: $min-item-color;
+          font: 12px/1.5 arial;
+          margin: $margin-default/2;
+          &:hover {
+            color: $min-item-hover;
+            border-bottom: 1px solid $min-item-hover;
+          }
+        }
+      }
+    }
+
+  }
+}
+.line {
+  margin: 0 0 22px 0;
+  border-bottom: 1px solid $border-color-default;
+}
+.camero-item:hover {
+ .sub-camero-item {
+   display: block;
+ }
+}
+.street-view:hover {
+  .sub-street-view {
+    display: block;
+  }
+}
+.bed:hover {
+  .sub-bed {
+    display: block;
+  }
+}
+.music:hover {
+  .sub-music {
+    display: block;
+  }
+}
+.i-cursor:hover {
+  .sub-i-cursor {
+    display: block;
+  }
+}
+.diamond:hover {
+  .sub-diamond {
+    display: block;
   }
 }
