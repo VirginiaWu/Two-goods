@@ -15,7 +15,7 @@ $menu-icon-size:40px;
 /// This is a layout variables-px
 /// @group header
 /// @since 0.4.0
-$layout-header-height:              80px;
+$layout-header-height:              120px;
 $layout-mobile-header-height:       48px;
 $layout-mobile-logo-scale:          0.8;
 $layout-sidepanel-width-collapsed : 70px;
@@ -25,7 +25,7 @@ $layout-user-profile-margin:        25px;
 $layout-gutter-sm :                 5px;
 
 //** Link hover decoration.
-$link-hover-decoration: none !default;
+$link-hover-decoration:             none !default;
 
 //== Typography
 // --------------------------------------------------
@@ -284,5 +284,5 @@ $font-size-15:                   15px;
 $font-size-16:                   16px;
 $font-size-20:                   20px;
 $font-size-24:                   24px;
-//header image height
-$header-image-height:            28px;
+$header-image-height:            61px;
+$top-header-height:              37px;
