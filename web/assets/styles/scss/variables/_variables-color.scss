@@ -658,13 +658,13 @@ $sidebar-hover-bgcolor:            #dde3eb;
 $sidebar-active-color:             $brand-primary;
 
 /// content
-$content-bg-color:                 #fff;
+$content-bg-color:                 rgb(205, 235, 184);
 /// nav-color
 /// @group header
 /// @since 0.4.0
 $header-hover-bgcolor:             mix(#ffda44, $color-black, 88%);
 /// @group header
-$header-bgcolor:                   #ffda44;
+$header-bgcolor:                   rgba(21, 119, 110, 0.58);
 
 /// dropdown
 $dropdown-menu-border:             #E4EAEC;
