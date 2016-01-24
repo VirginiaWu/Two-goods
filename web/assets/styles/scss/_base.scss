@@ -70,7 +70,8 @@ ul,ol {
 body {
   font-size: $font-size-base;
   height: 100%;
-  margin: 16px;
+  margin: 0;
+  background-color: rgb(205, 235, 184);
   padding: 0;
   color: $gray-darker;
   font-family: $font-family-sans-serif;
