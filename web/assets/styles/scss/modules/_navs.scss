@@ -49,6 +49,8 @@
     float: right;
     @include clearfix();
     .order {
+      position: relative;
+      top: 14px;
       font-size: 12px;
       border-radius: 4px;
       background-color: #fff;
