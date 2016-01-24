@@ -1,43 +1,43 @@
 header, #header {
   height: $layout-header-height;
   background-color: $header-bgcolor;
-  .top-header {
-    height: $top-header-height;
-    margin: 0 $padding-default*4;
-    padding: $padding-default $padding-default $padding-default 15px;
-    font: 14px/1.5 arial;
-    > span {
-      display: inline-block;
+}
+.top-header {
+  height: $top-header-height;
+  margin: 0 $padding-default*4;
+  padding: $padding-default $padding-default $padding-default 15px;
+  font: 14px/1.5 arial;
+  > span {
+    display: inline-block;
+    color: #fff;
+  }
+  .information {
+    float: right;
+    @include clearfix();
+    a {
       color: #fff;
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
     }
-    .information {
-      float: right;
-      @include clearfix();
-      a {
-        color: #fff;
-        &:hover {
-          border-bottom: 1px solid #fff;
-        }
-      }
-      > span {
-        color: #adefe7;
-        padding: 0 $padding-default*3;
-      }
+    > span {
+      color: #adefe7;
+      padding: 0 $padding-default*3;
     }
   }
-  .bottom-header {
-    height: $layout-header-height - $top-header-height;
-    margin: 0 $padding-default*4;
-    padding: $padding-default $padding-default $padding-default 15px;
-    .logo {
-      float: left;
-      display: inline-block;
-      width: $layout-sidepanel-pin-width;
-      overflow: hidden;
-      img {
-        height: $header-image-height;
-        width: 100%;
-      }
+}
+.bottom-header {
+  height: $layout-header-height - $top-header-height;
+  margin: 0 $padding-default*4;
+  padding: $padding-default $padding-default $padding-default 15px;
+  .logo {
+    float: left;
+    display: inline-block;
+    width: $layout-sidepanel-pin-width;
+    overflow: hidden;
+    img {
+      height: $header-image-height;
+      width: 100%;
     }
   }
 }
