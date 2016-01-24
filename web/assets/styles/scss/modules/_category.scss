@@ -1,17 +1,17 @@
 .category {
   background-color: #fff;
   border: 1px solid $border-color-default;
+  border-top: none;
   li {
     position: relative;
     display: list-item;
     padding: 0 10px;
-    border-bottom: 1px solid $border-color-default;
     &:hover {
       background-color: #f3f3f3;
     }
-  }
-  li:last-child {
-    border-bottom: none;
+    > .line {
+      margin: 0 $margin-default;
+    }
   }
   .main-area {
     padding: $padding-default*2 0;
@@ -47,8 +47,8 @@
   padding: $padding-default $padding-default 0 $padding-default;
   border: 1px solid $border-color-default;
   position: absolute;
-  left: 267px;
-  top: -1px;
+  left: 275px;
+  top: 0;
   width: 500px;
   background-color: #fff;
   z-index: 999;
@@ -88,7 +88,7 @@
 }
 .line {
   margin: 0 0 22px 0;
-  border-bottom: 1px solid $border-color-default;
+  border-bottom: 1px dotted #cdcdcd;
 }
 .camero-item:hover {
  .sub-camero-item {

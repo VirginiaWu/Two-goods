@@ -7,23 +7,26 @@ html(lang="en")
     link(rel="stylesheet", href= "styles/css/main.css")
   body
     header
-      a.logo(href="#")
-        img(src="https://trello-avatars.s3.amazonaws.com/f86fe17aca00bd48e3dc8485a8011a55/170.png")
-      .nav
-        ul.nav-toolbar.is-align-left.nav-clearfix
-          li
-            a.nav-item#home(href="#") 首页
-          li
-            a.nav-item#release(href="#") 发布闲置
-          li
-            a.nav-item#personal(href="/personal") 我的闲置
+      .top-header
+        span 欢迎光临Two-goods网站！
+        .information
+          a(href="#") 在线客服
+          span |
+          a(href="#") 登录
+          span |
+          a(href="#") 注册
+          span |
+          a(href="#") 帮助中心
+      .bottom-header
+        a.logo(href="#")
 
-        ul.nav-toolbar.is-align-right.nav-clearfix
-          li
-            .search
-              input.search-input(type="text", placeholder="search")
-              button.search-btn(type="submit")
-                i.fa.fa-search
+          img(src="https://trello-avatars.s3.amazonaws.com/f86fe17aca00bd48e3dc8485a8011a55/170.png")
+        .nav
+          .search
+            input.search-input(type="text", placeholder="search")
+            button.search-btn(type="submit")
+              i.fa.fa-search
+
     content
       .row
         .col-md-3
@@ -86,6 +89,7 @@ html(lang="en")
                       a(href="#") xbox
                       a(href="#") 游戏软件
                       a(href="#") 录音笔
+              .line
             li.list-item.street-view
               .main-area
                 span.fa.fa-street-view
@@ -145,7 +149,7 @@ html(lang="en")
                       a(href="#") 智能玩具
                       a(href="#") 手工制作
                       a(href="#") 过家家
-
+              .line
             li.list-item.bed
               .main-area
                 span.fa.fa-bed
@@ -206,6 +210,7 @@ html(lang="en")
                       a(href="#") 落地灯
                       a(href="#") 地板
                       a(href="#") 马桶
+              .line
             li.list-item.music
               .main-area
                 span.fa.fa-music
@@ -257,6 +262,7 @@ html(lang="en")
                       a(href="#") 播放器
                       a(href="#") DVD
                       a(href="#") 收音机
+              .line
             li.list-item.i-cursor
               .main-area
                 span.fa.fa-i-cursor
@@ -305,6 +311,7 @@ html(lang="en")
                       a(href="#") 围巾
                       a(href="#") 丝巾
                       a(href="#") 手套
+              .line
             li.list-item.diamond
               .main-area
                 span.fa.fa-diamond
@@ -356,6 +363,7 @@ html(lang="en")
                       a(href="#") 和田玉
                       a(href="#") 古玉
                       a(href="#") 陶瓷
+              .line
         .col-md-5
           a(href="#")
             img(alt="car", src="../images/car.jpg")
