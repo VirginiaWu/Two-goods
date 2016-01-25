@@ -4,7 +4,7 @@ html(lang="en")
     title= "Two-goods"
     meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    link(rel="stylesheet", href= "styles/css/main.css")
+    link(rel="stylesheet", href= "../styles/css/main.css")
   body
     header
       .top-header
@@ -17,7 +17,7 @@ html(lang="en")
           a(href="#") 注册
           span |
           a(href="#") 帮助中心
-      .bottom-header
+      .middle-header
         a.logo(href="#")
 
           img(src="https://trello-avatars.s3.amazonaws.com/f86fe17aca00bd48e3dc8485a8011a55/170.png")
@@ -36,8 +36,14 @@ html(lang="en")
                   span 件
             .order.personal-order
               a(href="#") 我的订单
-
-
+      .nav-header
+        ul.guide
+          li
+            a(href="/personal") 首页
+          li
+            a(href="#") 发布闲置
+          li
+            a(href="#") 我的闲置
     content
       .row
         .col-md-3
