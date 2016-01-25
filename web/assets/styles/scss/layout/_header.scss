@@ -26,8 +26,8 @@ header, #header {
     }
   }
 }
-.bottom-header {
-  height: $layout-header-height - $top-header-height;
+.middle-header {
+  height: $layout-header-height - $top-header-height - $nav-header-height;
   margin: 0 $padding-default*4;
   padding: $padding-default $padding-default $padding-default 15px;
   .logo {
@@ -38,6 +38,31 @@ header, #header {
     img {
       height: $header-image-height;
       width: 100%;
+    }
+  }
+}
+.nav-header {
+  height: $nav-header-height;
+  background-color: #fff;
+  padding: $padding-default $padding-default*4 + 15px;
+  border-bottom: 1px solid #eee;
+  .guide {
+    line-height: $nav-header-height - $padding-default*2;
+    border-left: 1px #a7d9d4 dotted;
+    li {
+      width: 33.333333%;
+      text-align: center;
+      display: inline-block;
+      padding: 0 $padding-default*3;
+      border-right: 1px #a7d9d4 dotted;
+      > a {
+        color: #000000;
+        font-weight: bold;
+        &:hover, &:focus {
+          color: $text-hover;
+          border-bottom: 3px solid $text-hover;
+        }
+      }
     }
   }
 }
