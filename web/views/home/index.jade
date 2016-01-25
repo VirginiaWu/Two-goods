@@ -4,10 +4,7 @@ html(lang="en")
     title= "Two-goods"
     meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    link(rel="stylesheet", href= "../styles/components/base.css")
-    link(rel="stylesheet", href= "../styles/components/header.css")
-    link(rel="stylesheet", href= "../styles/components/navs.css")
-    link(rel="stylesheet", href= "../styles/components/icons.css")
+    link(rel="stylesheet", href= "../styles/css/main.css")
   body
     header
       .top-header
@@ -42,8 +39,11 @@ html(lang="en")
       .nav-header
         ul.guide
           li
-            a(href="/home") 首页
+            a(href="/personal") 首页
           li
             a(href="#") 发布闲置
           li
             a(href="#") 我的闲置
+    block body
+    script(type="text/javascript", src="jquery/dist/jquery.min.js")
+    script(src="js/coffee/header.js")
