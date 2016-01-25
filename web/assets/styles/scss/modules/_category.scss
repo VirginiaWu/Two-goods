@@ -33,10 +33,10 @@
         font-size: 12px;
         font: 12px/1.5 arial;
         white-space: nowrap;
-        color: $min-item-color;
+        color: $text-color;
         &:hover {
-          color: $min-item-hover;
-          border-bottom: 1px solid $min-item-hover;
+          color: $text-hover;
+          border-bottom: 1px solid $text-hover;
         }
       }
     }
@@ -77,8 +77,8 @@
           font: 12px/1.5 arial;
           margin: $margin-default/2;
           &:hover {
-            color: $min-item-hover;
-            border-bottom: 1px solid $min-item-hover;
+            color: $text-hover;
+            border-bottom: 1px solid $text-hover;
           }
         }
       }
