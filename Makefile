@@ -8,6 +8,8 @@ web: ubuntu
 	docker build -t xxw_web web
 web_dir:
 	cd web && \
+    rm -rf .tmp/public/styles/components
+	cd web && \
 	mkdir assets/styles/scss/tmp
 	cd web && \
 	mkdir assets/styles/scss/tmp/components
@@ -21,7 +23,4 @@ run:web_dir
 	cd web && \
     sh compileScss.sh
 	cd web && \
-	rm -rf assets/styles/scss/tmp
-	cd web && \
-    rm -rf assets/styles/scss/tmp/components
-
+    grunt
