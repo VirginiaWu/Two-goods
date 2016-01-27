@@ -289,6 +289,9 @@ $dropdown-header-color:          ($color-black, 46.7%) !default;
 //** Deprecated `$dropdown-caret-color` as of v3.1.0
 $dropdown-caret-color:           #000 !default;
 
+//== Text
+$text-color:                   $gray-light;
+$text-hover:                   #47b1a5;
 
 //-- Z-index master list
 // --------------------------------------------------
@@ -685,7 +688,3 @@ $icon-sliders-color:               $color-success-lighter;
 
 /// switchButton
 $switchButton-off:                 #ccc;
-
-/// category
-$min-item-color:                   $gray-light;
-$text-hover:                   #47b1a5;
