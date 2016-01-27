@@ -12,7 +12,7 @@
 module.exports = function(grunt) {
 
 	grunt.config.set('clean', {
-		dev: ['assets/styles/scss/main.scss','assets/styles/scss/tmp'],
+		dev: ['assets/styles/scss/main.scss','assets/styles/scss/components'],
 		build: ['www']
 	});
 
