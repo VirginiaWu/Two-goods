@@ -1,6 +1,6 @@
 /// Layout content
 content, #content {
-  margin: 0 32px 8px 32px;
+  margin: 0 $margin-default*4 $margin-default*4 $margin-default*4;
   position: relative;
   display: block;
   background-color: $content-bg-color;
