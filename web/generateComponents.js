@@ -2,11 +2,11 @@ var fs = require('fs');
 
 function findModuleFiles(_name) {
   var totalList = fs.readdirSync("assets/styles/scss/modules").map(function (file) {
-    return "../../modules/" + file
+    return "../modules/" + file
   }).concat(fs.readdirSync("assets/styles/scss/layout").map(function (file) {
-    return "../../layout/" + file
+    return "../layout/" + file
   })).concat(fs.readdirSync("assets/styles/scss/states").map(function (file) {
-    return "../../states/" + file
+    return "../states/" + file
   }));
 
   var fileList = [];
@@ -21,10 +21,10 @@ function findModuleFiles(_name) {
 
 function findDependency() {
   var mixinsList = fs.readdirSync("assets/styles/scss/mixins").map(function (file) {
-    return "../../mixins/" + file
+    return "../mixins/" + file
   });
   var variablesList = fs.readdirSync("assets/styles/scss/variables").map(function (file) {
-    return "../../variables/" + file
+    return "../variables/" + file
   });
   var totalList = variablesList.concat(mixinsList);
 
@@ -46,8 +46,8 @@ function outputFile(_list, _path){
   for(index in totalList){
     var file = totalList[index];
     var nameList = findDependency().concat(findModuleFiles(file));
-    outputFile(nameList, "assets/styles/scss//tmp/components/" + file);
+    outputFile(nameList, "assets/styles/scss//components/" + file);
   }
-  var baseList = findDependency().concat(["../../_base.scss"]);
-  outputFile(baseList, "assets/styles/scss//tmp/components/_base.scss");
+  var baseList = findDependency().concat(["../_base.scss"]);
+  outputFile(baseList, "assets/styles/scss//components/_base.scss");
 }).call(this);
