@@ -47,8 +47,8 @@
   padding: $padding-default $padding-default 0 $padding-default;
   border: 1px solid $border-color-default;
   position: absolute;
-  left: 275px;
-  top: 0;
+  left: 100%;
+  top: -1px;
   width: 500px;
   background-color: #fff;
   z-index: 999;
