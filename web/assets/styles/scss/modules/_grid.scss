@@ -73,6 +73,9 @@
 @media (min-width: $screen-md-min) {
   @include make-grid(md);
 }
+@media (max-width: $screen-sm-min) {
+  @include make-grid(md);
+}
 
 
 // Large grid
