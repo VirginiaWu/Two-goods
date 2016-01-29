@@ -6,7 +6,7 @@
   .search {
     background-color: #ececec;
     position: relative;
-    width: 500px;
+    width: 42%;
     top: 14px;
     left: 45px;
     height: 36px;
@@ -14,7 +14,7 @@
     float: left;
     @include clearfix();
     .search-input {
-      width: 445px;
+      width: 89%;
       height: 32px;
       padding: 0 8px;
       margin: 0;
@@ -26,7 +26,7 @@
     }
     .search-btn {
       display: block;
-      width:55px;
+      width: 11%;
       height: 36px;
       position: absolute;
       top: 0;
@@ -90,6 +90,13 @@
       padding: 0 4px;
       color: #49b1a8;
       font-weight: bold;
+    }
+  }
+}
+@media screen and (max-width: 1145px) {
+  .nav {
+    .search {
+      width: 35%;
     }
   }
 }

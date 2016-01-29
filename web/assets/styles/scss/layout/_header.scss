@@ -27,13 +27,13 @@ header, #header {
   }
 }
 .middle-header {
-  height: $layout-header-height - $top-header-height - $nav-header-height;
+  height: $middle-header-height;
   margin: 0 $padding-default*4;
   padding: $padding-default $padding-default $padding-default 15px;
   .logo {
     float: left;
-    display: inline-block;
-    width: $layout-sidepanel-pin-width;
+    display: block;
+    width: 35%;
     overflow: hidden;
     img {
       height: $header-image-height;
@@ -42,12 +42,12 @@ header, #header {
   }
 }
 .nav-header {
-  height: $nav-header-height;
+  height: $layout-header-height - $top-header-height - $middle-header-height;
   background-color: #fff;
   padding: $padding-default $padding-default*4 + 15px;
   border-bottom: 1px solid #eee;
   .guide {
-    line-height: $nav-header-height - $padding-default*2;
+    line-height: $layout-header-height - $top-header-height - $middle-header-height - $padding-default*2;
     border-left: 1px #a7d9d4 dotted;
     li {
       width: 33.333333%;
@@ -66,53 +66,28 @@ header, #header {
     }
   }
 }
-@media screen and (max-width: 879px) {
-  header .user-info{
-    display: none;
+@media screen and (max-width: 1235px) {
+  .middle-header {
+    margin: 0;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 915px) {
   header, #header {
+    height: $layout-header-height+$middle-header-height;
+  }
+  .middle-header {
+    height: $middle-header-height*2;
     .logo {
       float: none;
       margin: 0 auto;
     }
-    .nav {
-      display: block;
-      position: relative;
-      top: 0;
-      // overflow: hidden;
-      background-color: $header-bgcolor;
-    }
-    .header-nav {
-      margin-right: 0;
-    }
-  }
-  content, #content {
-    margin-top: $layout-header-height;
-  }
-  sidebar, #sidebar {
-    margin-top: $layout-header-height;
   }
 }
-@media screen and (max-width: 550px) {
-  .user-exit {
-    display: none;
+@media screen and (max-width: $screen-sm-max) {
+  .top-header {
+    margin: 0;
   }
-}
-header {
-  @media screen and (max-width: 608px) {
-    #dropdown-ctrl-1 ~ .dropdown-menu{
-      left:-131px;
-      &:before{
-        left:46%;
-      }
-    }
-    #dropdown-ctrl-2 ~ .dropdown-menu{
-      left:-177px;
-      &:before{
-        left:60%;
-      }
-    }
+   .nav-header {
+     padding: $padding-default 15px;
   }
 }
