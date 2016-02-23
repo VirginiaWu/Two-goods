@@ -1,4 +1,3 @@
-/// Layout content
 content, #content {
   margin: 0 $margin-default*4 $margin-default*4 $margin-default*4;
   position: relative;
@@ -6,6 +5,14 @@ content, #content {
   background-color: $content-bg-color;
   > .row > .col-md-6 > a > img {
     width: 100%;
+  }
+}
+content, #content {
+  h1 {
+    margin-bottom: $margin-default*2;
+  }
+  > :first-child {
+    padding: $padding-default $padding-default - 1px;
   }
 }
 @media screen and (max-width: $screen-sm-max) {

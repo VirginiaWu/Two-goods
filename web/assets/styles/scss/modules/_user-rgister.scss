@@ -1,0 +1,9 @@
+.user-register {
+  @include footer-div();
+  .register-description {
+    @include footer-description();
+  }
+  .register-content {
+    @include footer-content();
+  }
+}

@@ -1,0 +1,9 @@
+.about {
+  @include footer-div();
+  .about-description {
+    @include footer-description();
+  }
+  .about-content {
+    @include footer-content();
+  }
+}

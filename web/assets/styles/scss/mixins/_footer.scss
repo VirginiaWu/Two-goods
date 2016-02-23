@@ -1,0 +1,16 @@
+@mixin footer-div() {
+  div + div {
+    margin-top: $margin-default;
+  }
+}
+
+@mixin footer-description() {
+  padding: $padding-default $padding-default*2;
+  background-color: #f8f8f8;
+  color: $text-color;
+}
+
+@mixin footer-content() {
+  padding: $padding-default $padding-default*2;
+  color: $text-color;
+}

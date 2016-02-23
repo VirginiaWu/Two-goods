@@ -1,0 +1,9 @@
+.user-protocol {
+  @include footer-div();
+  .protocol-description {
+    @include footer-description();
+  }
+  .protocol-content {
+    @include footer-content();
+  }
+}
