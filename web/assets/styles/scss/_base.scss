@@ -85,14 +85,16 @@ body {
   min-width: 800px;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: $headings-font-family;
   font-weight: normal;
   line-height: $headings-line-height;
-  font-size: $font-size-h1;
   color: $headings-color;
   margin: 0;
 }
+h1 {font-size: $font-size-h1;}
+h2 {font-size: $font-size-h2;}
+h3 {font-size: $font-size-h3;}
 
 button{
   border:none;
