@@ -1,3 +1,52 @@
 //
    Created by virginiawu on 16-2-27.
-
+extends ../index
+block body
+  content
+    .release
+      h2 发布闲置
+      .form
+        .form-group
+          label.form-left 标题
+          input.form-right
+        .form-group
+          label.form-left.form-button 类目
+          .form-right.btn.btn-sm.btn-default 请选择
+        .form-group
+          label.form-left.form-button 新旧
+          .form-right
+            .btn.btn-sm.btn-default 非全新
+            .btn.btn-sm.btn-default 全新
+        .form-group
+          label.form-left 价格
+          .form-right
+            input.add-on
+            span 元
+        .form-group
+          label.form-left
+          .form-right
+            input.add-on
+            span 元
+            span.add-input 原价
+        .form-group
+          label.form-left 联系人
+          .form-right
+            input.add-on-person
+            span.add-input.add-person 手机号:
+        .form-group
+          label.form-left
+          .form-right
+            input.add-on-name
+            label.add-input.add-person 姓名:
+        .form-group
+          label.form-left.form-textarea  所在地
+          textarea.form-right
+        .form-group
+          label.form-left.form-button  宝贝图片
+          input.form-right.upload(type="file" name="uploadFile" value="上传本地图片")
+        .form-group
+          label.form-left.form-textarea  宝贝描述
+          textarea.form-right
+        .form-group
+          .btn.btn-default 确定
+          .btn.btn-default 取消
