@@ -64,9 +64,9 @@
         padding-left: $padding-default;
         border-left: 3px solid #ffda44;
         > a {
-          color: #333;
+          color: $gray-dark;
           &:hover {
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid $gray-dark;
           }
         }
       }
