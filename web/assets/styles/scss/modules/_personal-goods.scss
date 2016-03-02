@@ -1,0 +1,30 @@
+.personal-goods {
+  font-size: 16px;
+  margin:0 $margin-default*13;
+  .col-md-3 {
+    padding: 0 $padding-default 0 $padding-default*16;
+  }
+  .personal-left {
+    text-align: right;
+    li {
+      padding: 8px;
+      border-radius: 4px;
+      line-height: 20px;
+      &:hover {
+        background-color: #C8DED0;
+        a {
+          color: $text-color;
+        }
+      }
+      a {
+        color: $gray-darker;
+      }
+    }
+  }
+}
+li.active {
+  background-color: #96B5CE;
+  a {
+    color: $text-color;
+  }
+}
