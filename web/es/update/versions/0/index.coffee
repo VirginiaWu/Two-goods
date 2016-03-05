@@ -7,4 +7,4 @@ module.exports = ->
       version: 1
   .catch ->
     doc:
-      versio: 0
+      version: 0

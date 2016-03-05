@@ -49,7 +49,8 @@ getUpdateCmd = ->
     targetPath = path.resolve "#{__dirname}/../es/update/update.js"
     return "node #{targetPath}"
   targetPath = path.resolve "#{__dirname}/../es/update/update.coffee"
-  "./node_modules/.bin/coffee #{targetPath}"
+  coffeePath = path.resolve "#{__dirname}/../node_modules/.bin/coffee"
+  "#{coffeePath} #{targetPath}"
 
 updateDBVersion = (cb) ->
   updateCmd = getUpdateCmd()

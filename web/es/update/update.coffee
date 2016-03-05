@@ -17,16 +17,15 @@ class Update
     @updateVersion = "versions/#{@version}"
     @update = require "#{__dirname}/#{@updateVersion}"
 
-    Promise.resolve(
-      @update(@version)
-    ).then (newVersion) ->
+    @update()
+    .then (newVersion) ->
       es_client.update
         index: 'version'
         type: 'ver'
         id: 'v'
         body: newVersion
       .then ->
-        newVersion.doc
+        newVersion
 
 yamlVersion = getYamlVersion(path.resolve "#{__dirname}/version.yml")
 doUpdate = (dbVersion) ->

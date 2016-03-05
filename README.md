@@ -35,3 +35,8 @@ or
   $ cd web/
   $ grunt test:route
 ```
+### How to use kibana?
+Please follow this [tutorial][tutorial].
+
+[tutorial]: <https://www.elastic.co/guide/en/kibana/current/getting-started.html>
+
