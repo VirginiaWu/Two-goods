@@ -26,7 +26,14 @@ module.exports.routes = {
     view: 'index'
   },
 
-  'get /login': 'AccountController.getLogin'
-
-
+  'get /login': 'AccountController.getLogin',
+  'get /register': 'AccountController.getRegister',
+  'get /list': 'ListController.getList',
+  'get /home': 'HomeController.getHome',
+  'get /release': 'GoodsController.getRelease',
+  'get /personal': 'GoodsController.getPersonal',
+  'get /protocol': 'ProtocolController.getProtocol',
+  'get /common-question': 'QuestionController.getCommonQuestion',
+  'get /forget-password': 'QuestionController.getForgetPassword',
+  'get /about': 'AboutController.getAbout'
 };

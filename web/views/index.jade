@@ -2,12 +2,12 @@ doctype html
 html(lang="en")
   head
     title= "Two-goods"
-    meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, protocol-scalable=no")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    link(rel="stylesheet", href= "../styles/components/base.css")
-    link(rel="stylesheet", href= "../styles/components/header.css")
-    link(rel="stylesheet", href= "../styles/components/navs.css")
-    link(rel="stylesheet", href= "../styles/components/icons.css")
+    //link(rel="stylesheet", href= "../styles/components/base.css")
+    //link(rel="stylesheet", href= "../styles/components/header.css")
+    //link(rel="stylesheet", href= "../styles/components/navs.css")
+    //link(rel="stylesheet", href= "../styles/components/icons.css")
     link(rel="stylesheet", href= "../styles/css/main.css")
   body
     header
@@ -16,7 +16,7 @@ html(lang="en")
         .information
           a(href="/login") 登录
           span |
-          a(href="/join") 注册
+          a(href="/register") 注册
       .middle-header
         a.logo(href="#")
 
@@ -28,42 +28,42 @@ html(lang="en")
               i.fa.fa-search
           ul.nav-right
             .order.barket
-              a(href="#")
+              a(href="/list")
                 span.fa.fa-shopping-cart.shopping-icon
                 .shopping-count
                   span 购物车
                   var.count 0
                   span 件
-            .order.personal-order
-              a(href="#") 我的订单
+            //.order.personal-order
+            //  a(href="#") 我的订单
       .nav-header
         ul.guide
           li
             a(href="/home") 首页
           li
-            a(href="#") 发布闲置
+            a(href="/release") 发布闲置
           li
-            a(href="#") 我的闲置
-    content
+            a(href="/personal") 我的闲置
+    block content
     
-footer
-      ul.menu
-        li
-          dl
-            dt 会员注册
-            dd
-              a(href="#") 用户协议
-            dd
-              a(href="#") 会员注册
-        li
-          dl
-            dt 常见疑问
-            dd
-              a(href="#") 忘记密码
-            dd
-              a(href="#") 常见疑问
-        li
-          dl
-            dt 关于我们
-            dd
-              a(href="#") 关于我们
+    footer
+          ul.menu
+            li
+              dl
+                dt 会员注册
+                dd
+                  a(href="/protocol") 用户协议
+                dd
+                  a(href="/register") 会员注册
+            li
+              dl
+                dt 常见疑问
+                dd
+                  a(href="/forget-password") 忘记密码
+                dd
+                  a(href="/common-question") 常见疑问
+            li
+              dl
+                dt 关于我们
+                dd
+                  a(href="/about") 关于我们
