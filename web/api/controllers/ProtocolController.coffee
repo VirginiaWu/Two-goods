@@ -1,3 +1,3 @@
 module.exports =
   getProtocol: (req, res) ->
-    res.view 'protocol/protocol'
+    res.view 'protocol/user-protocol'
